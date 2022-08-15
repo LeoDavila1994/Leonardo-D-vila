@@ -26,6 +26,7 @@ body {
   color: white;
   letter-spacing: 5px;
   font-weight: bold;
+  overflow: hidden;
 }
 
 .w{
