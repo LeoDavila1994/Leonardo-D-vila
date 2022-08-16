@@ -17,28 +17,24 @@ const Skills = () => {
                         <img src={html} className="skills-icon" />
                     </div>
                     <p>HTML 5</p>
-                    <p>91%</p>
                 </div>
                 <div className="skills-icon-container">
                     <div className='skills-icon-subcontainer'>
                         <img src={css} className="skills-icon" />
                     </div>
                     <p>CSS 3</p>
-                    <p>93%</p>
                 </div>
                 <div className="skills-icon-container">
                     <div className='skills-icon-subcontainer'>
                         <img src={js} className="skills-icon" />
                     </div>
                     <p>JAVA SCRIPT</p>
-                    <p>87%</p>
                 </div>
                 <div className="skills-icon-container">
                     <div className='skills-icon-subcontainer'>
                         <img src={rc} className="skills-icon" />
                     </div>
                     <p>REACT</p>
-                    <p>89%</p>
                 </div>
             </div>
         </div>
