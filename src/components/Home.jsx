@@ -7,13 +7,13 @@ const Home = () => {
                 <div className="home-front-page"></div>
                 <div className="home-img-container"></div>
                 <div className='home-text-container'>
-                    <h1>Hi Im Leo</h1>
-                    <p>Frontend Developer</p>
+                    <h1>Hola soy Leo</h1>
+                    <p>Desarrollador Frontend</p>
                 </div>
                 <div className="home-icons-container">
-                    <a href="https://www.facebook.com/profile.php?id=1783522575"><i class="fa-brands fa-square-facebook"></i></a>
-                    <a href="https://www.linkedin.com/in/leodavila/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/liodavila1/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=1783522575"><i className="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/leodavila/"><i className="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/liodavila1/"><i className="fa-brands fa-square-instagram"></i></a>
                 </div>
             </div>
         </div>

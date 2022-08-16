@@ -9,7 +9,7 @@ const Skills = () => {
         <div className='skills-container'>
             <div className='skills-img-container'></div>
             <div className='skills-title-container'>
-                <h2>SKILLS</h2>
+                <h2>HABILIDADES</h2>
             </div>
             <div className="skills-text-container">
                 <div className="skills-icon-container">

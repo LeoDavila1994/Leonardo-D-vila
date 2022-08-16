@@ -49,11 +49,11 @@ const NavBar = () => {
                         </label>
                     </div>
                     <div className='menu'>
-                        <label htmlFor="navbar"><p onClick={home}>Home</p></label>
-                        <label htmlFor="navbar"><p onClick={about}>About</p></label>
-                        <label htmlFor="navbar"><p onClick={skills}>Skills</p></label>
-                        <label htmlFor="navbar"><p onClick={projects}>Projects</p></label>
-                        <label htmlFor="navbar"><p onClick={contact}>Contact</p></label>
+                        <label htmlFor="navbar"><p onClick={home}>Inicio</p></label>
+                        <label htmlFor="navbar"><p onClick={about}>Sobre mi</p></label>
+                        <label htmlFor="navbar"><p onClick={skills}>Habilidades</p></label>
+                        <label htmlFor="navbar"><p onClick={projects}>Proyectos</p></label>
+                        <label htmlFor="navbar"><p onClick={contact}>Contacto</p></label>
                     </div>
                 </>
             )}
