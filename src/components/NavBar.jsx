@@ -1,10 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import Loader from './Loader';
+import { useSelector, useDispatch } from 'react-redux';
+import { setSwich } from "../store/slices/swich.slice";
 
 const NavBar = () => {
 
     const navigate = useNavigate();
+    const dispatch = useDispatch();
+    const swich = useSelector(state => state.swich);
 
     useEffect(() => {
 
@@ -21,6 +25,7 @@ const NavBar = () => {
     const [ skillsColor, setSkillsColor ] = useState("white");
     const [ projectsColor, setProjectsColor ] = useState("white");
     const [ contactColor, setContactColor ] = useState("white");
+    const [ position, setPositon] = useState("left");
 
     const home = () => {
         navigate("/");
@@ -67,6 +72,15 @@ const NavBar = () => {
         setContactColor("salmon");
     }
 
+    const changePosition = () => {
+        if(position === "left"){
+            setPositon("rigth")
+        } else{
+            setPositon("left")
+        }
+        dispatch(setSwich());
+    };
+
     return (
         <>
             {isLoading ? <Loader /> : (
@@ -84,6 +98,9 @@ const NavBar = () => {
                         <label htmlFor="navbar"><p onClick={skills} mycustom={skillsColor}>Habilidades</p></label>
                         <label htmlFor="navbar"><p onClick={projects} mycustom={projectsColor}>Proyectos</p></label>
                         <label htmlFor="navbar"><p onClick={contact} mycustom={contactColor}>Contacto</p></label>
+                    </div>
+                    <div className='swich' style={{backgroundColor: `${swich? "#6e6e73" : "#30303133"}`}}>
+                        <div className='btn-mode' custombtn={position} onClick={changePosition}></div>
                     </div>
                 </>
             )}

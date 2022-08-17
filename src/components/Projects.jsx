@@ -5,12 +5,16 @@ import pkdx from "../images/miniatura-pkdx.png";
 import rym from "../images/miniatura-rym.png";
 import wa from "../images/miniatura-wa.png";
 import ec from "../images/miniatura-ec.png";
+import { useSelector } from 'react-redux';
 
 const Projects = () => {
+
+    const swich = useSelector(state => state.swich);
+
     return (
-        <div className='projects-container'>
+        <div className='projects-container' style={{backgroundColor: `${swich? "#414152":"#f5f5f7"}`}}>
             <div className="projects-title-container">
-                <h2>PROYECTOS</h2>
+                <h2 style={{color: `${swich? "#f5f5f7":"#313132"}`}}>PROYECTOS</h2>
             </div>
             <div className="grid">
                 <div className="projects-img-container img-1">

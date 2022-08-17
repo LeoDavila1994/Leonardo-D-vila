@@ -5,10 +5,6 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-body {
-  background-color: #f5f5f7;
-}
-
 /* Loader */
 
 .loader-container{
@@ -211,6 +207,11 @@ body {
   transition: 400ms ease;
 }
 
+.menu p[mycustom="white"]{
+  color: white;
+  transition: 400ms ease;
+}
+
 #navbar:checked + .navbar-container .icon-container .icon-1 {
   top: 3px;
   transform: rotate(-40deg);
@@ -223,6 +224,43 @@ body {
 
 #navbar:checked ~ .menu {
   height: calc(100vh - 48px);
+}
+
+.swich{
+  position: absolute;
+  width: 40px;
+  height: 18px;
+  border-radius: 40px;
+  top: 55px;
+  right: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 300;
+}
+
+.btn-mode{
+  width: 12px;
+  height: 12px;
+  background-color: #f5f5f7;
+  border-radius: 50%;
+  font-size: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn-mode[custombtn="rigth"]{
+  transform: translate(23px);
+  transition: 400ms ease;
+  background-color: rgba(49, 49, 50, 0.7);
+}
+
+.btn-mode[custombtn="left"]{
+  background-color: #f5f5f7;
+  transform: translate(5px);
+  transition: 400ms ease;
 }
 
 /* Home */
@@ -285,7 +323,6 @@ body {
 }
 
 .home-text-container h1 {
-  color: #313132;
   font-size: 1.7rem;
 }
 
@@ -314,9 +351,8 @@ body {
 }
 
 .home-icons-container a:hover {
-  color: royalblue;
   transform: scale(1.5) rotate(15deg);
-  transition: 500ms ease;
+  transition: 300ms ease;
 }
 
 /* About */
