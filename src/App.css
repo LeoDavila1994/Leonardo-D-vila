@@ -316,6 +316,7 @@ body {
 .home-icons-container a:hover {
   color: royalblue;
   transform: scale(1.5) rotate(15deg);
+  transition: 500ms ease;
 }
 
 /* About */
