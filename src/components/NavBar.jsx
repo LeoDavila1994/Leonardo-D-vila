@@ -16,57 +16,56 @@ const NavBar = () => {
     },[]);
 
     const [isLoading, setIsLoading] = useState(true);
-    const [ homeColor, setTextColor ] = useState(true);
-    const [ aboutColor, setAboutColor ] = useState(false);
-    const [ skillsColor, setSkillsColor ] = useState(false);
-    const [ projectsColor, setProjectsColor ] = useState(false);
-    const [ contactColor, setContactColor ] = useState(false);
+    const [ homeColor, setHomeColor ] = useState("salmon");
+    const [ aboutColor, setAboutColor ] = useState("white");
+    const [ skillsColor, setSkillsColor ] = useState("white");
+    const [ projectsColor, setProjectsColor ] = useState("white");
+    const [ contactColor, setContactColor ] = useState("white");
 
     const home = () => {
         navigate("/");
-        setTextColor(true);
-        setAboutColor(false);
-        setSkillsColor(false);
-        setProjectsColor(false);
-        setContactColor(false);
+        setHomeColor("salmon");
+        setAboutColor("white");
+        setSkillsColor("white");
+        setProjectsColor("white");
+        setContactColor("white");
     }
 
     const about = () => {
         navigate("/about");
-        setTextColor(false);
-        setAboutColor(true);
-        setSkillsColor(false);
-        setProjectsColor(false);
-        setContactColor(false);
+        setHomeColor("white");
+        setAboutColor("salmon");
+        setSkillsColor("white");
+        setProjectsColor("white");
+        setContactColor("white");
     }
 
     const skills = () => {
         navigate("/skills");
-        setTextColor(false);
-        setAboutColor(false);
-        setSkillsColor(true);
-        setProjectsColor(false);
-        setContactColor(false);
+        setHomeColor("white");
+        setAboutColor("white");
+        setSkillsColor("salmon");
+        setProjectsColor("white");
+        setContactColor("white");
     }
 
     const projects = () => {
         navigate("/projects");
-        setTextColor(false);
-        setAboutColor(false);
-        setSkillsColor(false);
-        setProjectsColor(true);
-        setContactColor(false);
+        setHomeColor("white");
+        setAboutColor("white");
+        setSkillsColor("white");
+        setProjectsColor("salmon");
+        setContactColor("white");
     }
 
     const contact = () => {
         navigate("/contact");
-        setTextColor(false);
-        setAboutColor(false);
-        setSkillsColor(false);
-        setProjectsColor(false);
-        setContactColor(true);
+        setHomeColor("white");
+        setAboutColor("white");
+        setSkillsColor("white");
+        setProjectsColor("white");
+        setContactColor("salmon");
     }
-
 
     return (
         <>
@@ -80,11 +79,11 @@ const NavBar = () => {
                         </label>
                     </div>
                     <div className='menu'>
-                        <label htmlFor="navbar"><p onClick={home} style={{color: `${homeColor? "salmon": "white"}`}}>Inicio</p></label>
-                        <label htmlFor="navbar"><p onClick={about} style={{color: `${aboutColor? "salmon": "white"}`}}>Sobre mi</p></label>
-                        <label htmlFor="navbar"><p onClick={skills} style={{color: `${skillsColor? "salmon": "white"}`}}>Habilidades</p></label>
-                        <label htmlFor="navbar"><p onClick={projects} style={{color: `${projectsColor? "salmon": "white"}`}}>Proyectos</p></label>
-                        <label htmlFor="navbar"><p onClick={contact} style={{color: `${contactColor? "salmon": "white"}`}}>Contacto</p></label>
+                        <label htmlFor="navbar"><p onClick={home}  mycustom={homeColor}>Inicio</p></label>
+                        <label htmlFor="navbar"><p onClick={about} mycustom={aboutColor}>Sobre mi</p></label>
+                        <label htmlFor="navbar"><p onClick={skills} mycustom={skillsColor}>Habilidades</p></label>
+                        <label htmlFor="navbar"><p onClick={projects} mycustom={projectsColor}>Proyectos</p></label>
+                        <label htmlFor="navbar"><p onClick={contact} mycustom={contactColor}>Contacto</p></label>
                     </div>
                 </>
             )}

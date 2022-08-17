@@ -206,6 +206,11 @@ body {
   cursor: pointer;
 }
 
+.menu p[mycustom="salmon"]{
+  color: salmon;
+  transition: 400ms ease;
+}
+
 #navbar:checked + .navbar-container .icon-container .icon-1 {
   top: 3px;
   transform: rotate(-40deg);
