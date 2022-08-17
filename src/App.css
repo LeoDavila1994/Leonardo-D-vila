@@ -254,11 +254,11 @@
 .btn-mode[custombtn="rigth"]{
   transform: translate(23px);
   transition: 400ms ease;
-  background-color: rgba(49, 49, 50, 0.7);
+  background-color: #f5f5f7;
 }
 
 .btn-mode[custombtn="left"]{
-  background-color: #f5f5f7;
+  background-color: rgba(49, 49, 50, 0.7);
   transform: translate(5px);
   transition: 400ms ease;
 }
