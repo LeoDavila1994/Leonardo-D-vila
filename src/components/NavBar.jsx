@@ -4,6 +4,8 @@ import Loader from './Loader';
 
 const NavBar = () => {
 
+    const navigate = useNavigate();
+
     useEffect(() => {
 
         const loading = () =>{
@@ -19,8 +21,6 @@ const NavBar = () => {
     const [ skillsColor, setSkillsColor ] = useState(false);
     const [ projectsColor, setProjectsColor ] = useState(false);
     const [ contactColor, setContactColor ] = useState(false);
-
-    const navigate = useNavigate();
 
     const home = () => {
         navigate("/");
