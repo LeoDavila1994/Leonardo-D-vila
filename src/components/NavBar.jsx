@@ -10,6 +10,7 @@ const NavBar = () => {
             setIsLoading(false)
         }
         setTimeout(loading, 2000)
+        navigate("/");
     },[]);
 
     const [isLoading, setIsLoading] = useState(true);
