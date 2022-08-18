@@ -12,20 +12,20 @@ const NavBar = () => {
 
     useEffect(() => {
 
-        const loading = () =>{
+        const loading = () => {
             setIsLoading(false)
         }
         setTimeout(loading, 2000)
         navigate("/");
-    },[]);
+    }, []);
 
     const [isLoading, setIsLoading] = useState(true);
-    const [ homeColor, setHomeColor ] = useState("salmon");
-    const [ aboutColor, setAboutColor ] = useState("white");
-    const [ skillsColor, setSkillsColor ] = useState("white");
-    const [ projectsColor, setProjectsColor ] = useState("white");
-    const [ contactColor, setContactColor ] = useState("white");
-    const [ position, setPositon] = useState("left");
+    const [homeColor, setHomeColor] = useState("salmon");
+    const [aboutColor, setAboutColor] = useState("white");
+    const [skillsColor, setSkillsColor] = useState("white");
+    const [projectsColor, setProjectsColor] = useState("white");
+    const [contactColor, setContactColor] = useState("white");
+    const [position, setPositon] = useState("left");
 
     const home = () => {
         navigate("/");
@@ -73,9 +73,9 @@ const NavBar = () => {
     }
 
     const changePosition = () => {
-        if(position === "left"){
+        if (position === "left") {
             setPositon("rigth")
-        } else{
+        } else {
             setPositon("left")
         }
         dispatch(setSwich());
@@ -93,14 +93,16 @@ const NavBar = () => {
                         </label>
                     </div>
                     <div className='menu'>
-                        <label htmlFor="navbar"><p onClick={home}  mycustom={homeColor}>Inicio</p></label>
+                        <label htmlFor="navbar"><p onClick={home} mycustom={homeColor}>Inicio</p></label>
                         <label htmlFor="navbar"><p onClick={about} mycustom={aboutColor}>Sobre mi</p></label>
                         <label htmlFor="navbar"><p onClick={skills} mycustom={skillsColor}>Habilidades</p></label>
                         <label htmlFor="navbar"><p onClick={projects} mycustom={projectsColor}>Proyectos</p></label>
                         <label htmlFor="navbar"><p onClick={contact} mycustom={contactColor}>Contacto</p></label>
                     </div>
-                    <div className='swich' style={{backgroundColor: `${swich? "#6e6e73" : "#30303133"}`}}>
-                        <div className='btn-mode' custombtn={position} onClick={changePosition}></div>
+                    <div className='swich-container'>
+                        <div className='swich' style={{ backgroundColor: `${swich ? "#6e6e73" : "#30303133"}` }}>
+                            <div className='btn-mode' custombtn={position} onClick={changePosition}></div>
+                        </div>
                     </div>
                 </>
             )}
