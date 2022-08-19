@@ -20,6 +20,10 @@ const Contact = () => {
         emailjs.sendForm("service_1jcabhh", "template_fqbxd3b", e.target, "WBQD4QTr00f6A6D7F")
             .then(response => console.log(response))
             .catch(error => console.log(error))
+
+            setName("");
+            setEmail("");
+            setMensaje("");
     }
 
 
