@@ -649,6 +649,15 @@
   font-weight: 500;
 }
 
+.succes{
+  display: flex;
+  gap: 5px;
+  position: absolute;
+  color: greenyellow;
+  top: 260px;
+  font-size: 1rem;
+}
+
 
 @media (min-width: 768px) {
 
@@ -806,6 +815,17 @@
 
   .img-6{
     grid-area: item6;
+  }
+
+  /* Contact */
+
+  .succes{
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    color: greenyellow;
+    top: 290px;
+    font-size: 1rem;
   }
 
 }

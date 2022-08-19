@@ -14,18 +14,24 @@ const Contact = () => {
     const [email, setEmail] = useState("");
     const [mensaje, setMensaje] = useState("");
 
+    const [enviado, setEnviado] = useState(false);
+
     const submit = e => {
         e.preventDefault();
 
         emailjs.sendForm("service_1jcabhh", "template_fqbxd3b", e.target, "WBQD4QTr00f6A6D7F")
-            .then(response => console.log(response))
+            .then(response => {
+                console.log(response);
+                setEnviado(true)
+            })
             .catch(error => console.log(error))
 
-            setName("");
-            setEmail("");
-            setMensaje("");
-    }
+        setName("");
+        setEmail("");
+        setMensaje("");
 
+        setTimeout(() => setEnviado(false), 3000);
+    }
 
     return (
         <div className='contact-container' style={{ backgroundColor: `${swich ? "#414152" : "#f5f5f7"}` }}>
@@ -40,12 +46,18 @@ const Contact = () => {
                 <form className='form' onSubmit={submit} ref={form}>
                     <div className='form-container'>
                         <label htmlFor='name'>Nombre:</label>
-                        <input type="text" id='name' className='form-input' value={name} onChange={e => setName(e.target.value)} name="user-name"/>
+                        <input type="text" id='name' className='form-input' value={name} onChange={e => setName(e.target.value)} name="user-name" />
                         <label htmlFor='email'>Email:</label>
-                        <input type="email" id='email' className='form-input' value={email} onChange={e => setEmail(e.target.value)} name="user-email"/>
+                        <input type="email" id='email' className='form-input' value={email} onChange={e => setEmail(e.target.value)} name="user-email" />
                         <label htmlFor='mensaje'>Mensaje:</label>
                         <textarea className='form-area' id='mensaje' value={mensaje} onChange={e => setMensaje(e.target.value)} name="user-mensaje"></textarea>
                     </div>
+                    {enviado && (
+                        <div className='succes'>
+                            <p>Enviado con exito !</p>
+                            <i className="fa-regular fa-circle-check"></i>
+                        </div>
+                    )}
                     <button className='btn-form'>Enviar</button>
                 </form>
             </div>
