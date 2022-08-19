@@ -302,7 +302,7 @@
   position: absolute;
   width: 100%;
   height: 160px;
-  background-image: linear-gradient(212deg, rgba(65, 105, 225, 0.5), rgba(250, 128, 114, 0.5));
+  background-image: linear-gradient(212deg, rgba(65, 105, 225, 0.6), rgba(250, 128, 114, 0.6));
   border-radius: 10px 10px 0 0;
 
 }
@@ -567,8 +567,9 @@
 
 .contact-card{
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
   width: 80%;
   max-width: 576px;
   height: 85%;
@@ -576,24 +577,14 @@
   bottom: 0;
   border-radius: 10px 10px 0 0;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.7);
-  padding: 0.5rem;
+  padding: 1.2rem;
+  background-image: linear-gradient(212deg, rgba(65, 105, 225, 0.6), rgba(250, 128, 114, 0.6));
+  gap: 60px;
 }
 
 .contact-title-container{
   color: #313132;
   letter-spacing: 2px;
-}
-
-.contact-card{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 1.2rem;
-}
-
-.contact-card h2{
-  margin-bottom: 10rem;
 }
 
 .contact-text-container{
@@ -604,6 +595,59 @@
   letter-spacing: 2px;
   line-height: 2;
   text-align: center;
+}
+
+.form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.form-container{
+  width: 90%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.form-input{
+  outline: none;
+  border-radius: 2px;
+  border: 0;
+  padding: 2px;
+}
+
+.form-area{
+  width: 100%;
+  height: 70px;
+  overflow: auto;
+  outline: none;
+  border-radius: 2px;
+  border: 0;
+  padding: 2px;
+  resize: none;
+}
+
+.btn-form{
+  background-color: royalblue;
+  color: white;
+  font-family: inherit;
+  border: 0;
+  width: 60px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  font-weight: 500;
 }
 
 

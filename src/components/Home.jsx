@@ -15,8 +15,9 @@ const Home = () => {
                     <p style={{color: `${swich? "pink":"salmon"}`}}>Desarrollador Frontend</p>
                 </div>
                 <div className="home-icons-container">
-                    <a href="https://www.facebook.com/profile.php?id=1783522575" style={{color: `${swich? "pink":"salmon"}`}}><i className="fa-brands fa-square-facebook"></i></a>
+                <a href="https://wa.me/524495921411" style={{color: `${swich? "pink":"salmon"}`}}><i className="fa-brands fa-square-whatsapp"></i></a>
                     <a href="https://www.linkedin.com/in/leodavila/" style={{color: `${swich? "pink":"salmon"}`}}><i className="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=1783522575" style={{color: `${swich? "pink":"salmon"}`}}><i className="fa-brands fa-square-facebook"></i></a>
                     <a href="https://www.instagram.com/liodavila1/" style={{color: `${swich? "pink":"salmon"}`}}><i className="fa-brands fa-square-instagram"></i></a>
                 </div>
             </div>
