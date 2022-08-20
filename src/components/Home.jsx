@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import cv from "../pdf/cv.pdf";
 
 const Home = () => {
 
@@ -14,7 +15,7 @@ const Home = () => {
                     <h1 style={{ color: `${swich ? "#f5f5f7" : "#313132"}` }}>Hola soy Leo</h1>
                     <p style={{ color: `${swich ? "pink" : "salmon"}` }}>Desarrollador Frontend</p>
                     <div className='btn-resumen'>
-                        <a href="src\pdf\cv.pdf" target="_blank" download="Leonardo_Dávila"><i className="fa-solid fa-file"></i></a>
+                        <a href={cv} target="_blank" download="Leonardo_Dávila"><i className="fa-solid fa-file"></i></a>
                     </div>
                 </div>
                 <div className="home-icons-container">
