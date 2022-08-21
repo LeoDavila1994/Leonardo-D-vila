@@ -317,7 +317,7 @@
   box-shadow: 0 0 0 10px #ff2d7544,
   0 0 50px #ff2d75,
   0 0 100px #ff2d75;
-  animation: span2 5s 3s linear infinite;
+  animation: span2 5s linear infinite;
 }
 
 .span3{
@@ -330,7 +330,7 @@
   box-shadow: 0 0 0 10px #4fc3dc44,
   0 0 50px #4fc3dc,
   0 0 100px #4fc3dc;
-  animation: span3 8s 4s linear infinite;
+  animation: span3 8s linear infinite;
 }
 
 .span4{
@@ -343,7 +343,7 @@
   box-shadow: 0 0 0 10px #ff2d7544,
   0 0 50px #ff2d75,
   0 0 100px #ff2d75;
-  animation: span4 7s 3s linear infinite;
+  animation: span4 7s linear infinite;
 }
 .span5{
   position: relative;
@@ -355,7 +355,7 @@
   box-shadow: 0 0 0 10px #4fc3dc44,
   0 0 50px #4fc3dc,
   0 0 100px #4fc3dc;
-  animation: span5 8s 3s linear infinite;
+  animation: span5 8s linear infinite;
 }
 
 .span6{
@@ -368,7 +368,7 @@
   box-shadow: 0 0 0 10px #ff2d7544,
   0 0 50px #ff2d75,
   0 0 100px #ff2d75;
-  animation: span6 4s 5s linear infinite;
+  animation: span6 4s linear infinite;
 }
 
 .span7{
@@ -381,7 +381,7 @@
   box-shadow: 0 0 0 10px #4fc3dc44,
   0 0 50px #4fc3dc,
   0 0 100px #4fc3dc;
-  animation: span7 9s 3s linear infinite;
+  animation: span7 9s linear infinite;
 }
 
 .span8{
@@ -394,7 +394,7 @@
   box-shadow: 0 0 0 10px #ff2d7544,
   0 0 50px #ff2d75,
   0 0 100px #ff2d75;
-  animation: span8 7s 4s linear infinite;
+  animation: span8 7s linear infinite;
 }
 
 .span9{
@@ -407,7 +407,7 @@
   box-shadow: 0 0 0 10px #4fc3dc44,
   0 0 50px #4fc3dc,
   0 0 100px #4fc3dc;
-  animation: span9 14s 3s linear infinite;
+  animation: span9 14s linear infinite;
 }
 
 .span10{
@@ -420,7 +420,7 @@
   box-shadow: 0 0 0 10px #ff2d7544,
   0 0 50px #ff2d75,
   0 0 100px #ff2d75;
-  animation: span10 10s 3s linear infinite;
+  animation: span10 10s linear infinite;
 }
 
 .span11{
@@ -433,7 +433,7 @@
   box-shadow: 0 0 0 10px #4fc3dc44,
   0 0 50px #4fc3dc,
   0 0 100px #4fc3dc;
-  animation: span11 6s 4s linear infinite;
+  animation: span11 6s linear infinite;
 }
 
 .span12{
@@ -446,7 +446,7 @@
   box-shadow: 0 0 0 10px #ff2d7544,
   0 0 50px #ff2d75,
   0 0 100px #ff2d75;
-  animation: span12 3s 5s linear infinite;
+  animation: span12 3s linear infinite;
 }
 
 .span13{
@@ -459,7 +459,7 @@
   box-shadow: 0 0 0 10px #4fc3dc44,
   0 0 50px #4fc3dc,
   0 0 100px #4fc3dc;
-  animation: span13 8s 3s linear infinite;
+  animation: span13 8s linear infinite;
 }
 
 .span14{
@@ -472,7 +472,7 @@
   box-shadow: 0 0 0 10px #ff2d7544,
   0 0 50px #ff2d75,
   0 0 100px #ff2d75;
-  animation: span14 9s 4s linear infinite;
+  animation: span14 9s linear infinite;
 }
 
 .span15{
@@ -485,7 +485,7 @@
   box-shadow: 0 0 0 10px #4fc3dc44,
   0 0 50px #4fc3dc,
   0 0 100px #4fc3dc;
-  animation: span15 7s 5s linear infinite;
+  animation: span15 7s linear infinite;
 }
 
 .span16{
@@ -498,7 +498,7 @@
   box-shadow: 0 0 0 10px #ff2d7544,
   0 0 50px #ff2d75,
   0 0 100px #ff2d75;
-  animation: span16 5s 4s linear infinite;
+  animation: span16 5s linear infinite;
 }
 
 .span17{
@@ -511,7 +511,7 @@
   box-shadow: 0 0 0 10px #4fc3dc44,
   0 0 50px #4fc3dc,
   0 0 100px #4fc3dc;
-  animation: span17 7s 3s linear infinite;
+  animation: span17 7s linear infinite;
 }
 
 .span18{
@@ -524,7 +524,7 @@
   box-shadow: 0 0 0 10px #ff2d7544,
   0 0 50px #ff2d75,
   0 0 100px #ff2d75;
-  animation: span18 3s 3s linear infinite;
+  animation: span18 3s linear infinite;
 }
 
 .span19{
@@ -537,7 +537,7 @@
   box-shadow: 0 0 0 10px #4fc3dc44,
   0 0 50px #4fc3dc,
   0 0 100px #4fc3dc;
-  animation: span19 8s 3s linear infinite;
+  animation: span19 8s linear infinite;
 }
 
 .span20{
@@ -550,7 +550,7 @@
   box-shadow: 0 0 0 10px #ff2d7544,
   0 0 50px #ff2d75,
   0 0 100px #ff2d75;
-  animation: span20 4s 7s linear infinite;
+  animation: span20 4s linear infinite;
 }
 
 .span21{
@@ -563,7 +563,7 @@
   box-shadow: 0 0 0 10px #4fc3dc44,
   0 0 50px #4fc3dc,
   0 0 100px #4fc3dc;
-  animation: span21 7s 5s linear infinite;
+  animation: span21 7s linear infinite;
 }
 
 .span22{
@@ -576,7 +576,7 @@
   box-shadow: 0 0 0 10px #ff2d7544,
   0 0 50px #ff2d75,
   0 0 100px #ff2d75;
-  animation: span22 12s 3s linear infinite;
+  animation: span22 12s linear infinite;
 }
 
 .span23{
@@ -589,7 +589,7 @@
   box-shadow: 0 0 0 10px #4fc3dc44,
   0 0 50px #4fc3dc,
   0 0 100px #4fc3dc;
-  animation: span23 5s 3s linear infinite;
+  animation: span23 5s linear infinite;
 }
 
 .span24{
@@ -602,7 +602,7 @@
   box-shadow: 0 0 0 10px #ff2d7544,
   0 0 50px #ff2d75,
   0 0 100px #ff2d75;
-  animation: span24 9s 4s linear infinite;
+  animation: span24 9s linear infinite;
 }
 
 @keyframes span1{
