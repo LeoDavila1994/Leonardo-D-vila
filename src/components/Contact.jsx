@@ -15,22 +15,45 @@ const Contact = () => {
     const [mensaje, setMensaje] = useState("");
 
     const [enviado, setEnviado] = useState(false);
+    const [emptyName, setEmptyName] = useState(false);
+    const [emptyEmail, setEmptyEmail] = useState(false);
+    const [emptyMensaje, setEmptyMensaje] = useState(false);
 
     const submit = e => {
         e.preventDefault();
+        if (name != "" && email != "" && mensaje != "") {
+            emailjs.sendForm("service_1jcabhh", "template_fqbxd3b", e.target, "WBQD4QTr00f6A6D7F")
+                .then(response => setEnviado(true))
+                .catch(error => console.log(error))
 
-        emailjs.sendForm("service_1jcabhh", "template_fqbxd3b", e.target, "WBQD4QTr00f6A6D7F")
-            .then(response => {
-                console.log(response);
-                setEnviado(true)
-            })
-            .catch(error => console.log(error))
+            setName("");
+            setEmail("");
+            setMensaje("");
+            setEmptyName(false);
+            setEmptyEmail(false);
+            setEmptyMensaje(false);
 
-        setName("");
-        setEmail("");
-        setMensaje("");
-
-        setTimeout(() => setEnviado(false), 3000);
+            setTimeout(() => setEnviado(false), 3000);
+        } else if (name === "" && email === "" && mensaje === ""){
+            setEmptyName(true);
+            setEmptyEmail(true);
+            setEmptyMensaje(true);
+        } else if(name != "" && email === "" && mensaje === ""){
+            setEmptyEmail(true);
+            setEmptyMensaje(true);
+        } else if(name === "" && email != "" && mensaje === ""){
+            setEmptyName(true);
+            setEmptyMensaje(true);
+        } else if(name === "" && email === "" && mensaje != ""){
+            setEmptyName(true);
+            setEmptyEmail(true);
+        } else if(name === ""){
+            setEmptyName(true);
+        } else if (email === ""){
+            setEmptyEmail(true);
+        } else if (mensaje === ""){
+            setEmptyMensaje(true);
+        }
     }
 
     return (
@@ -46,11 +69,11 @@ const Contact = () => {
                 <form className='form' onSubmit={submit} ref={form}>
                     <div className='form-container'>
                         <label htmlFor='name'>Nombre:</label>
-                        <input type="text" id='name' className='form-input' value={name} onChange={e => setName(e.target.value)} name="user-name" />
+                        <input type="text" id='name' className='form-input' value={name} onChange={e => setName(e.target.value)} name="user-name" placeholder={emptyName? "Campo Incorrecto" : undefined}/>
                         <label htmlFor='email'>Email:</label>
-                        <input type="email" id='email' className='form-input' value={email} onChange={e => setEmail(e.target.value)} name="user-email" />
+                        <input type="email" id='email' className='form-input' value={email} onChange={e => setEmail(e.target.value)} name="user-email" placeholder={emptyEmail? "Campo Incorrecto" : undefined}/>
                         <label htmlFor='mensaje'>Mensaje:</label>
-                        <textarea className='form-area' id='mensaje' value={mensaje} onChange={e => setMensaje(e.target.value)} name="user-mensaje"></textarea>
+                        <textarea className='form-area' id='mensaje' value={mensaje} onChange={e => setMensaje(e.target.value)} name="user-mensaje" placeholder={emptyMensaje? "Campo Incorrecto" : undefined}></textarea>
                     </div>
                     {enviado && (
                         <div className='succes'>
