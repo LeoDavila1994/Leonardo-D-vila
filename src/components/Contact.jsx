@@ -57,7 +57,7 @@ const Contact = () => {
     }
 
     return (
-        <div className='contact-container' style={{ backgroundColor: `${swich ? "#414152" : "#f5f5f7"}` }}>
+        <div className='contact-container'>
             <div className="contact-card">
                 <div className='contact-title-container'>
                     <h2 style={{ color: `${swich ? "#f5f5f7" : "#313132"}` }}>CONTACTO</h2>

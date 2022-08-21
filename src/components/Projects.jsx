@@ -12,7 +12,7 @@ const Projects = () => {
     const swich = useSelector(state => state.swich);
 
     return (
-        <div className='projects-container' style={{backgroundColor: `${swich? "#414152":"#f5f5f7"}`}}>
+        <div className='projects-container'>
             <div className="projects-title-container">
                 <h2 style={{color: `${swich? "#f5f5f7":"#313132"}`}}>PROYECTOS</h2>
             </div>

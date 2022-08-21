@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 export const swichSlice = createSlice({
     name: 'swich',
-    initialState: false,
+    initialState: true,
     reducers: {
         setSwich: (state, action) => {
             return !state;

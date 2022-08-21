@@ -1,6 +1,6 @@
 import './App.css'
 import { HashRouter, Routes, Route } from "react-router-dom";
-import { NavBar, Home, About, Skills, Projects, Contact } from "./components";
+import { BackGround, NavBar, Home, About, Skills, Projects, Contact } from "./components";
 
 function App() {
 
@@ -8,6 +8,7 @@ function App() {
   return (
     <HashRouter>
       <NavBar />
+      <BackGround />
       <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/about' element={<About />}/>

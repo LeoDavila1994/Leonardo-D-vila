@@ -6,7 +6,7 @@ const About = () => {
     const swich = useSelector(state => state.swich);
 
     return (
-        <div className='about-container' style={{backgroundColor: `${swich? "#414152":"#f5f5f7"}`}}>
+        <div className='about-container'>
             <div className="about-img-container">
                 <div className="picture one"></div>
                 <div className="picture two"></div>
