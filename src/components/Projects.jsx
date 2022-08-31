@@ -17,7 +17,7 @@ const Projects = () => {
                 <h2 style={{color: `${swich? "#f5f5f7":"#313132"}`}}>PROYECTOS</h2>
             </div>
             <div className="grid">
-                <div className="projects-img-container img-1">
+                <div className="projects-img-container img-6">
                     <a href="https://sunnyshop.netlify.app/" target="_blank"><img src={ec} className="projects-img" /></a>
                 </div>
                 <div className="projects-img-container img-2">
@@ -26,13 +26,13 @@ const Projects = () => {
                 <div className="projects-img-container img-3">
                     <a href="https://weatherappnow.netlify.app/" target="_blank"><img src={wa} className="projects-img"/></a>
                 </div>
-                <div className="projects-img-container img-4">
+                <div className="projects-img-container img-1">
                     <a href="https://pokedextotrainers.netlify.app/" target="_blank"><img src={pkdx} className="projects-img" /></a>
                 </div>
                 <div className="projects-img-container img-5">
                     <a href="https://multiverserickandmorty.netlify.app/" target="_blank"><img src={rym} className="projects-img"/></a>
                 </div>
-                <div className="projects-img-container img-6">
+                <div className="projects-img-container img-4">
                     <a href="https://landingpagefmh.netlify.app/" target="_blank"><img src={lp} className="projects-img"/></a>
                 </div>
             </div>
