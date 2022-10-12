@@ -230,7 +230,7 @@
   position: absolute;
   width: 80%;
   max-width: 576px;
-  height:32px;
+  height:20px;
   z-index: 299;
   left: 50%;
   transform: translate(-50%);
@@ -242,12 +242,13 @@
   height: 18px;
   border-radius: 40px;
   top: 50%;
-  right: 10px;
+  right: 50%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   z-index: 300;
   transform: translateY(-50%);
+  transform: translate(50%);
 }
 
 .btn-mode{
@@ -881,9 +882,9 @@
 
 .home-img-container {
   margin-top: 5rem;
-  width: 150px;
-  height: 150px;
-  background-image: url("https://scontent.fagu3-1.fna.fbcdn.net/v/t1.6435-9/104038641_10213544428523424_3825454477497281228_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=174925&_nc_eui2=AeH8mE3zCGmfkxcYWAZAbcK3LkBfP7vxO9QuQF8_u_E71Mya-9CiLDbvBxk8JutISk8&_nc_ohc=MYSH4AGzGScAX9tk6hc&_nc_ht=scontent.fagu3-1.fna&oh=00_AT8Ghcwobcwsheg667GWPcMUCXQVHrfsEdDcMl3rz9Ekew&oe=63207063");
+  width: 170px;
+  height: 170px;
+  background-image: url("./images/perfil.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1269,7 +1270,7 @@
     left: 50%;
     transform: translate(-50%);
     z-index: 1000;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 
   #navbar:checked~.menu {
@@ -1357,7 +1358,7 @@
     "item1 item1 item3 item3"
     "item4 item4 item5 item5"
     "item6 item6 item5 item5";
-    gap: 0.5rem;
+    gap: 0.9rem;
     overflow: auto;
     background-color: #313132;
     padding: 0.5rem;

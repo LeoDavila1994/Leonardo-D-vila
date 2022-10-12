@@ -3,6 +3,9 @@ import html from "../images/html-5.svg";
 import css from "../images/css-3.svg";
 import js from "../images/javascript.svg";
 import rc from "../images/react.svg";
+import nd from "../images/node.svg";
+import exp from "../images/express.jpg";
+import post from "../images/postgresql.png";
 import { useSelector } from 'react-redux';
 
 const Skills = () => {
@@ -38,7 +41,25 @@ const Skills = () => {
                     <div className='skills-icon-subcontainer'>
                         <img src={rc} className="skills-icon" />
                     </div>
-                    <p style={{color: `${swich? "#f5f5f7":"#313132"}`}}>REACT</p>
+                    <p style={{color: `${swich? "#f5f5f7":"#313132"}`}}>REACT JS</p>
+                </div>
+                <div className="skills-icon-container">
+                    <div className='skills-icon-subcontainer' style={{transform: "scale(1.3"}}>
+                        <img src={nd} className="skills-icon" />
+                    </div>
+                    <p style={{color: `${swich? "#f5f5f7":"#313132"}`}} >NODE JS</p>
+                </div>
+                <div className="skills-icon-container">
+                    <div className='skills-icon-subcontainer' style={{transform: "scale(1.4"}}>
+                        <img src={exp} className="skills-icon" />
+                    </div>
+                    <p style={{color: `${swich? "#f5f5f7":"#313132"}`}}>EXPRESS</p>
+                </div>
+                <div className="skills-icon-container">
+                    <div className='skills-icon-subcontainer'>
+                        <img src={post} className="skills-icon" />
+                    </div>
+                    <p style={{color: `${swich? "#f5f5f7":"#313132"}`}}>POSTGRESQL</p>
                 </div>
             </div>
         </div>
