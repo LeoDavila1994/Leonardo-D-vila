@@ -18,7 +18,7 @@ const About = () => {
                 <h2 style={{color: `${swich? "#f5f5f7":"#313132"}`}}>SOBRE MI</h2>
             </div>
             <div className="about-text-container">
-                <p style={{color: `${swich? "#f5f5f7":"#6e6e73"}`}}>La programación es algo que me ha deslumbrado completamente ya que va muy acorde a mi personalidad y mis gustos, siempre he tenido una gran afición por las computadoras y la tecnología y ahora que me encuentro en este camino estoy tan satisfecho de poder aprender día con día y estoy muy emocionado de poder encontrar a la empresa que me de mi primera oportunidad de desempeñarme y crecer ya que estoy dispuesto a dar lo mejor de mi para así poder cumplir mis metas y demostrar que soy capaz.
+                <p style={{color: `${swich? "#f5f5f7":"#6e6e73"}`}}>La programación es algo que me ha deslumbrado completamente ya que va muy acorde a mi personalidad y mis gustos, siempre he tenido una gran afición por las computadoras y la tecnología y ahora que me encuentro en este camino estoy tan satisfecho de poder aprender día con día, me gusta pasar tiempo con mi familia y amigos, los videojuegos y de ves en cuando salir a conocer nuevos lugares.
                 </p>
             </div>
         </div>

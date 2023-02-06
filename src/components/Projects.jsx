@@ -1,10 +1,10 @@
 import React from 'react';
-import crud from "../images/miniatura-crud.png";
+import crud from "../images/miniatura-landing-apple.png";
 import lp from "../images/miniatura-lp.png";
 import pkdx from "../images/miniatura-pkdx.png";
 import rym from "../images/miniatura-rym.png";
 import wa from "../images/miniatura-wa.png";
-import ec from "../images/miniatura-ec.png";
+import ec from "../images/miniatura-carrousel.png";
 import { useSelector } from 'react-redux';
 
 const Projects = () => {
@@ -18,10 +18,10 @@ const Projects = () => {
             </div>
             <div className="grid">
                 <div className="projects-img-container img-6">
-                    <a href="https://sunnyshop.netlify.app/" target="_blank"><img src={ec} className="projects-img" /></a>
+                    <a href="https://applelandingpagefm.netlify.app/" target="_blank"><img src={crud} className="projects-img" /></a>
                 </div>
                 <div className="projects-img-container img-2">
-                    <a href="https://crudtousers.netlify.app/" target="_blank"><img src={crud} className="projects-img"/></a>
+                    <a href="https://lively-blini-0c5ece.netlify.app/" target="_blank"><img src={ec} className="projects-img"/></a>
                 </div>
                 <div className="projects-img-container img-3">
                     <a href="https://weatherappnow.netlify.app/" target="_blank"><img src={wa} className="projects-img"/></a>
