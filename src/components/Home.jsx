@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import cv from "../pdf/Leonardo_Dávila_Desarrollador.pdf";
+import cv from "../pdf/Leonardo Davila Desarrollador.pdf";
 
 const Home = () => {
 
@@ -13,9 +13,9 @@ const Home = () => {
                 <div className="home-img-container"></div>
                 <div className='home-text-container'>
                     <h1 style={{ color: `${swich ? "#f5f5f7" : "#313132"}` }}>Hola soy Leo</h1>
-                    <p style={{ color: `${swich ? "pink" : "salmon"}` }}>Desarrollador Frontend</p>
+                    <p style={{ color: `${swich ? "pink" : "salmon"}` }}>Desarrollador Full Stack Jr</p>
                     <div className='btn-resumen'>
-                        <a href={cv} target="_blank" download="Leonardo_Dávila_FrontendDev"><i className="fa-solid fa-file"></i></a>
+                        <a href={cv} target="_blank" download="Leonardo_Dávila_Developer"><i className="fa-solid fa-file"></i></a>
                     </div>
                 </div>
                 <div className="home-icons-container">
